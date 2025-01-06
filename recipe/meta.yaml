@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/robot_descriptions-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/robot_descriptions-{{ version }}.tar.gz
   sha256: 812315e706c9852d974bab37a144189c5516ddc0c88a764b04fc1ee0c51be552
 
 build:
@@ -14,15 +14,15 @@ build:
     - robot_descriptions = robot_descriptions._command_line:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - flit
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - gitpython >=3.1.18
     - tqdm >=4.64.0
 
@@ -34,6 +34,7 @@ test:
     - robot_descriptions --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/robot-descriptions/robot_descriptions.py
