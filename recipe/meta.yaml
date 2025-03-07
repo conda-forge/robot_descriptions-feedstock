@@ -11,7 +11,7 @@ source:
 
 build:
   entry_points:
-    - robot_descriptions = robot_descriptions._command_line:main
+    - robot_descriptions = robot_descriptions.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
