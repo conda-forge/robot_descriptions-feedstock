@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-robot_descriptions-green.svg)](https://anaconda.org/conda-forge/robot_descriptions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-robot__descriptions-green.svg)](https://anaconda.org/conda-forge/robot_descriptions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/robot_descriptions.svg)](https://anaconda.org/conda-forge/robot_descriptions) |
 
 Installing robot_descriptions
 =============================
