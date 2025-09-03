@@ -1,5 +1,5 @@
 {% set name = "robot_descriptions" %}
-{% set version = "1.20.0" %}
+{% set version = "1.21.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/robot_descriptions-{{ version }}.tar.gz
-  sha256: cfb094cdd7a9bb541c61a235c9e34e1204e67e4a7d0571dc1e2c9252c3b42b46
+  sha256: 477ebd483edc2745c60f75126aea6ee41c99538a468d12074da482c0f73da597
 
 build:
   entry_points:
