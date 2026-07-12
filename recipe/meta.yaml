@@ -23,6 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - git
     - gitpython >=3.1.18
     - tqdm >=4.64.0
 
