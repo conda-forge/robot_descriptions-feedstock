@@ -1,5 +1,5 @@
 {% set name = "robot_descriptions" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/robot_descriptions-{{ version }}.tar.gz
-  sha256: ff6c2dd8929064e16351a372b925ca8cd70c180f4264bc6942333bae377ebaf6
+  sha256: 095cc47a47d6653b79f93d398fc4fe62f7f07cc72495f26ff776a68dc62ca320
 
 build:
   entry_points:
@@ -23,6 +23,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - git
     - gitpython >=3.1.18
     - tqdm >=4.64.0
 
