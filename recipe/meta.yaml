@@ -1,5 +1,5 @@
 {% set name = "robot_descriptions" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/robot_descriptions-{{ version }}.tar.gz
-  sha256: 095cc47a47d6653b79f93d398fc4fe62f7f07cc72495f26ff776a68dc62ca320
+  sha256: ba96fe8d1e9417c37b853973454ec3f776d99b1ed30edb582650b6aeb7b36cab
 
 build:
   entry_points:
     - robot_descriptions = robot_descriptions.__main__:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
