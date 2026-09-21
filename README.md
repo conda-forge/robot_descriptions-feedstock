@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `robot_descriptions` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install robot_descriptions
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install robot_descriptions
 ```
 
-It is possible to list all of the versions of `robot_descriptions` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add robot_descriptions
+# for installing globally
+pixi global install robot_descriptions
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `robot_descriptions` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search robot_descriptions --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search robot_descriptions --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search robot_descriptions --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds robot_descriptions --channel conda-forge
 # List dependencies of `robot_descriptions`:
 mamba repoquery depends robot_descriptions --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
