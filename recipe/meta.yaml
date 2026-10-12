@@ -1,5 +1,5 @@
 {% set name = "robot_descriptions" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/robot_descriptions-{{ version }}.tar.gz
-  sha256: 4abf4b0dc34694fd5229b10c631d4b50e872dc7a9ca6a72bc2e30ed69c17e81e
+  sha256: d9e4d2ebe885504c245adbf7ae6a88e5098cecc25604166bc7a2a9ef43961935
 
 build:
   entry_points:
